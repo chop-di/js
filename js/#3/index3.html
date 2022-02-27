@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="text">
+<p id="pText">Это первоначальный текст</p>
+
+<script type="text/javascript">
+function changeText() {
+document.getElementById('pText').innerHTML = "Это изменившийся текст";
+document.getElementById("pText").setAttribute('style', 'font-size: 32px; font-style: Arial; color:red');
+}
+</script>
+
+<input type="button" value="Нажмите для изменения" onclick="changeText();"/>
+</div>
+</body>
+</html>
